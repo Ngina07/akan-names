@@ -108,3 +108,27 @@ function validateForm() {
         year: year,
         valid:formValid
     }
+    return validatedDetails;
+
+}
+///....Function to calculate day of the week...///
+function calculateDayOfWk() {
+    var userDetails = validateForm();
+    var date = userDetails.date;
+    var month = userDetails.month;
+    var year = userDetails.year;
+
+    var my_a = Math.floor((14 - month) / 12);
+    var my_y = year - my_a;
+    var my_m = month + 12 * my_a - 2;
+    mdayOfWeek = (date + my_y + Math.floor(my_y / 4) - Math.floor(my_y / 100) +
+        Math.floor(year / 400) + Math.floor((31 * my_m) / 12)) % 7;
+
+    // var dayOfWeek = mdays[mdayOfWeek];
+
+    // alert(dayOfWeek);
+    return mdayOfWeek;
+
+
+
+}
