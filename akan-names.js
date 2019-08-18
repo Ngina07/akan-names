@@ -1,5 +1,6 @@
 var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-
+var maleAkanArray = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku","Yaw", "Kofi", "Kwame"];
+var femaleAkanArray = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
 
 //this function will validate gender, day, year, month
 function validateForm() {
@@ -135,3 +136,26 @@ function calculateDayOfWk() {
 }
 
 
+///... Function to get and print Akan name...///
+
+function get_and_Print_AkanName(){
+    var userDetails = validateForm();
+    var gender = userDetails.gender;
+    var dayOfwkIndex = calculateDayOfWk();
+    var dayOfWeek = days[dayOfwkIndex];
+
+    if(gender === "male"){
+        akanName = maleAkanArray[dayOfwkIndex];
+    }else if(gender === "female"){
+        akanName = femaleAkanArray[dayOfwkIndex];
+    }else{
+        alert("error is selection")
+    }
+    
+
+  
+
+document.getElementById("results").innerHTML = "Your Akan Name is "+akanName + " because you were born on "+dayOfWeek;
+
+
+}
