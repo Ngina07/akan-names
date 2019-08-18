@@ -1,3 +1,6 @@
+var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+
+
 //this function will validate gender, day, year, month
 function validateForm() {
     var usergender = document.getElementsByName("gender");
@@ -14,7 +17,7 @@ function validateForm() {
         userdate.style.border = "2px solid red"
         return false;
     } else {
-       
+
         if (!isNaN(userdate.value)) {
             if (userdate.value <= 0 || userdate.value > 31) {
                 document.getElementById("error").innerHTML = "Invalid day"
@@ -106,7 +109,7 @@ function validateForm() {
         date: date,
         month: month,
         year: year,
-        valid:formValid
+        valid: formValid
     }
     return validatedDetails;
 
@@ -121,14 +124,14 @@ function calculateDayOfWk() {
     var my_a = Math.floor((14 - month) / 12);
     var my_y = year - my_a;
     var my_m = month + 12 * my_a - 2;
-    mdayOfWeek = (date + my_y + Math.floor(my_y / 4) - Math.floor(my_y / 100) +
+    userDayOfWeek = (date + my_y + Math.floor(my_y / 4) - Math.floor(my_y / 100) +
         Math.floor(year / 400) + Math.floor((31 * my_m) / 12)) % 7;
 
-    // var dayOfWeek = mdays[mdayOfWeek];
+    // var dayOfWeek = mdays[userDayOfWeek];
 
     // alert(dayOfWeek);
-    return mdayOfWeek;
-
-
+    return userDayOfWeek;
 
 }
+
+
