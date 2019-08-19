@@ -1,4 +1,4 @@
-# {MY PORTFOLIO: PHILLIS NGINA}
+# {FIND YOUR AKAN NAME}
 #### {This is a webpage that calculates and prints a users Akan name based on their day of birth and gender}, {19/08/2019}
 #### By **{Phillis Ngina Njoroge}**
 ## Description
