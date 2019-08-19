@@ -1,5 +1,5 @@
 var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-var maleAkanArray = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku","Yaw", "Kofi", "Kwame"];
+var maleAkanArray = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
 var femaleAkanArray = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
 
 //this function will validate gender, day, year, month
@@ -136,9 +136,8 @@ function calculateDayOfWk() {
 }
 
 
-///... Function to get and print Akan name...///
-
-var userDetails = validateForm();
+function get_and_Print_AkanName(){
+    var userDetails = validateForm();
     var gender = userDetails.gender;
     var dayOfwkIndex = calculateDayOfWk();
     var dayOfWeek = days[dayOfwkIndex];
@@ -151,7 +150,31 @@ var userDetails = validateForm();
         alert("error is selection")
     }
     
-    document.getElementById("results").innerHTML = "Your Akan Name is "+akanName + " because you were born on "+dayOfWeek;
+
+  
+
+document.getElementById("results").innerHTML = "Your Akan Name is "+akanName + " because you were born on "+dayOfWeek;
 
 
 }
+
+
+//this function will contain all function which you will write. They will be run simultaneoulsy
+
+function aggregateMyFunctions() {
+    var validate = validateForm();
+    var isValid = validate.valid;
+
+    if (!isValid) {
+        validateForm();
+        return false;
+    } else {
+        //all other functions
+        //update this functions af you write more functions
+        //example 
+        calculateDayOfWk();
+        get_and_Print_AkanName();
+        return false;
+    }
+}
+
