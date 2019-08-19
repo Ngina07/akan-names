@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="bootstrap.css" rel="stylesheet" type="text/css" media="all">
+    <link href="index.css" rel="stylesheet" type="text/css" media="all">
+    <title>Find-your-Akan-name</title>
+</head>
+
+<body>
+    <!--Creating form to input birthday-->
+    <div class="container">
+        <div class="text-center">
+            <h1><strong>FIND YOUR AKAN NAME</strong></h1>
+            <h3>Fun fact!!Akan names are derived from Ghanian culture. Frequently in Ghana, children are given their
+                first name as a 'day name' which corresponds to the day in the week they were born.Enter your birthday
+                details and find you Akan name here:</h3>
+        </div>
+        <div class="biodata-form">
+            <form onsubmit="return aggregateMyFunctions()">
+                <div class="row">
+                    <div class="col col-12">
+                        <h4><strong>ENTER BIRTHDAY : </strong></h4>
+                        <h5 id="error"></h5>
+                    </div>
+                    <div class="col col-12">
+                        <div class="form-group">
+                            <label for="date">DATE</label>
+                            <div class="col-sm-3">
+                                <input class="form-control" id="date" value="">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="month">MONTH</label>
+                            <div class="col-sm-3">
+                                <input class="form-control" id="month" value="">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="year">YEAR</label>
+                            <div class="col-sm-3">
+                                <input class="form-control" id="year" value="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Creating gender selection radios-->
+
+                <div class="row form-inline" style="font-size: 20px">
+                    <div class="col col-12">
+                        <h3 id="my_gender"><strong> SELECT GENDER</strong></h3>
+                    </div>
+                    <div class=" col col-12">
+                        <input class="form-check-input" type="radio" name="gender" id="male" value="male">Male
+
+                        <input class="form-check-input" type="radio" name="gender" id="female" value="female">Female
+
+                    </div>
+                    <br><br>
+                    <div class="col col-12">
+                        <button type="submit" class="btn  btn-info btn-lg">Submit</button>
+                    </div>
+                    <div class="myresults">
+                        <p id="results"></p>
+                    </div>
+            </form>
+
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
