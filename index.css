@@ -1,0 +1,34 @@
+
+body {
+  
+    min-height:100%;
+    background:url(images/lions.jpeg) rgba(78, 72, 76, 0.3);
+   background-size: cover;
+    background-blend-mode: multiply;
+    color:black;
+    
+}
+body h3 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    line-height: 40px;
+
+}
+
+.myresults{
+    margin-top: 60px;
+}
+.biodata-form {
+    padding: 80px;
+    font-size: 20px;
+    
+}
+   
+
+#results {
+    font-family: cursive;
+    font-size: 40px;
+
+}
+#male {
+    font-size: 70px;
+}
