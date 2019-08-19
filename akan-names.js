@@ -138,11 +138,10 @@ function calculateDayOfWk() {
 
 ///... Function to get and print Akan name...///
 
-function get_and_Print_AkanName(){
-    var userDetails = validateForm();
+var userDetails = validateForm();
     var gender = userDetails.gender;
     var dayOfwkIndex = calculateDayOfWk();
-    var dayOfWeek = days[dayOfwkIndex];
+    var dayOfWeek = mdays[dayOfwkIndex];
 
     if(gender === "male"){
         akanName = maleAkanArray[dayOfwkIndex];
@@ -152,10 +151,3 @@ function get_and_Print_AkanName(){
         alert("error is selection")
     }
     
-
-  
-
-document.getElementById("results").innerHTML = "Your Akan Name is "+akanName + " because you were born on "+dayOfWeek;
-
-
-}
