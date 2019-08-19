@@ -3,8 +3,11 @@
 #### By **{Phillis Ngina Njoroge}**
 ## Description
 {This is a webpage that calculates and prints a users Akan name based on their day of birth and gender. Akan names are derived from Ghanian culture. Frequently in Ghana, children are given their first name as a 'day name' which corresponds to the day in the week they were born. click <a href="https://ngina07.github.io/my-ip/">here</a> to access the live site on Github pages}
+##BDD
+
+
 ## Setup/Installation Requirements
-* To access this application you will require a browser and working network.
+To access this application you will require a browser and working network.
 ## Known Bugs
 {This code has no known bugs}
 ## Technologies Used
