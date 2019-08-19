@@ -141,7 +141,7 @@ function calculateDayOfWk() {
 var userDetails = validateForm();
     var gender = userDetails.gender;
     var dayOfwkIndex = calculateDayOfWk();
-    var dayOfWeek = mdays[dayOfwkIndex];
+    var dayOfWeek = days[dayOfwkIndex];
 
     if(gender === "male"){
         akanName = maleAkanArray[dayOfwkIndex];
@@ -151,3 +151,7 @@ var userDetails = validateForm();
         alert("error is selection")
     }
     
+    document.getElementById("results").innerHTML = "Your Akan Name is "+akanName + " because you were born on "+dayOfWeek;
+
+
+}
