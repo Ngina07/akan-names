@@ -128,7 +128,7 @@ function calculateDayOfWk() {
     userDayOfWeek = (date + my_y + Math.floor(my_y / 4) - Math.floor(my_y / 100) +
         Math.floor(year / 400) + Math.floor((31 * my_m) / 12)) % 7;
 
-    // var dayOfWeek = mdays[userDayOfWeek];
+    // var dayOfWeek = days[userDayOfWeek];
 
     // alert(dayOfWeek);
     return userDayOfWeek;
@@ -163,9 +163,9 @@ document.getElementById("results").innerHTML = "Your Akan Name is "+akanName + "
 
 function aggregateMyFunctions() {
     var validate = validateForm();
-    var isValid = validate.valid;
+    var formValid = validate.valid;
 
-    if (!isValid) {
+    if (!formValid) {
         validateForm();
         return false;
     } else {

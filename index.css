@@ -2,7 +2,7 @@
 body {
   
     min-height:100%;
-    background:url(images/lions.jpeg) rgba(78, 72, 76, 0.3);
+    background:url(images/lions.jpeg) rgba(143, 128, 138, 0.3);
    background-size: cover;
     background-blend-mode: multiply;
     color:black;
@@ -13,10 +13,20 @@ body h3 {
     line-height: 40px;
 
 }
+h1 {
+    padding-top: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    line-height: 40px;
+    font-size: 50px;
+}
 
 .myresults{
-    margin-top: 60px;
-}
+    margin-top: 50px;
+    color: white;
+    background-color: black;
+
+    
+    }
 .biodata-form {
     padding: 80px;
     font-size: 20px;
@@ -27,8 +37,4 @@ body h3 {
 #results {
     font-family: cursive;
     font-size: 40px;
-
-}
-#male {
-    font-size: 70px;
 }
